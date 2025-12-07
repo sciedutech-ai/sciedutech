@@ -3,44 +3,104 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sciedutech.id – Growth and Create </title>
+    <title>Sciedutech.id – Growth and Create</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; font-family: 'Poppins', sans-serif; box-sizing: border-box; }
-        body { background: linear-gradient(135deg, #3a8df5, #d93ad8); color: #fff; overflow-x: hidden; }
-        header { padding: 30px; text-align: center; }
-        .logo { width: 180px; height: auto; }
-        .container { max-width: 900px; margin: auto; text-align: center; padding: 20px; }
-        h1 { font-size: 42px; margin-top: 20px; font-weight: 700; }
-        h2.tagline { font-size: 22px; margin-top: 10px; font-weight: 300; opacity: 0.9; }
-        p { margin-top: 15px; font-size: 18px; line-height: 1.6; }
-        .btn-group { margin-top: 40px; display: flex; justify-content: center; gap: 20px; }
-        .btn { padding: 14px 26px; border-radius: 10px; font-size: 18px; text-decoration: none; font-weight: 600; transition: 0.3s; }
-        .btn-ig { background: #ffffff; color: #000; }
-        .btn-ig:hover { opacity: 0.8; }
-        .btn-email { background: #000; color: #fff; }
-        .btn-email:hover { opacity: 0.8; }
-        footer { margin-top: 60px; padding-bottom: 40px; text-align: center; font-size: 14px; opacity: 0.7; }
+        body { background: #0d0d0d; color: #fff; overflow-x: hidden; }
+        header { padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; background: #000; border-bottom: 1px solid #222; }
+        .logo { width: 130px; }
+        nav a { margin-left: 25px; text-decoration: none; color: #ccc; font-weight: 400; }
+        nav a:hover { color: #fff; }
+
+        .container { max-width: 900px; margin: auto; text-align: center; padding: 60px 20px; }
+        h1 { font-size: 38px; font-weight: 700; }
+        h2.tagline { font-size: 20px; margin-top: 10px; font-weight: 300; opacity: 0.9; }
+        p { margin-top: 15px; font-size: 18px; line-height: 1.7; color: #ccc; }
+
+        .courses { margin-top: 60px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+        .course-card { background: #111; padding: 25px; border: 1px solid #222; border-radius: 12px; text-align: left; }
+        .course-card h3 { font-size: 22px; margin-bottom: 10px; }
+        .course-card a { color: #4fa3ff; text-decoration: underline; }
+
+        .voucher-box { margin-top: 60px; text-align: left; background: #111; padding: 30px; border-radius: 12px; border: 1px solid #222; }
+        .voucher-box input { width: 100%; padding: 12px; margin-top: 10px; border-radius: 8px; border: none; outline: none; margin-bottom: 15px; }
+        .btn { padding: 12px 25px; background: #4fa3ff; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; }
+        .btn:hover { opacity: 0.8; }
+
+        .history { margin-top: 60px; background: #111; padding: 30px; border-radius: 12px; border: 1px solid #222; }
+        .history ul { margin-top: 15px; color: #ccc; }
+
+        footer { margin-top: 60px; padding: 40px; text-align: center; font-size: 14px; color: #777; }
     </style>
 </head>
 <body>
-    <header>
-        <img src="assets/logo.png" alt="Sciedutech Logo" class="logo">
-    </header>
-    <div class="container">
-        <h1>Sciedutech.id</h1>
-        <h2 class="tagline">Growth and Create</h2>
-        <p>
-            Sciedutech.id adalah sebuah startup di bidang Edutech (Education Technology) yang berfokus pada penggabungan ilmu pengetahuan (Science), Matematika (Math), dan Teknologi (Technology).
-            Kami berevolusi dari Scideugame Official untuk membawa kurikulum yang lebih transformatif dan relevan dengan masa depan.
-        </p>
-        <div class="btn-group">
-            <a href="https://instagram.com/sciedutech.id" class="btn btn-ig">Instagram</a>
-            <a href="mailto:sciedugame@gmail.com" class="btn btn-email">Email Kami</a>
+
+<header>
+    <img src="assets/logo.png" class="logo" alt="Sciedutech Logo">
+    <nav>
+        <a href="#courses">Kursus</a>
+        <a href="#voucher">Voucher</a>
+        <a href="#history">Riwayat</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Sciedutech.id</h1>
+    <h2 class="tagline">Growth and Create</h2>
+    <p>Sciedutech.id adalah startup Edutech yang berfokus pada integrasi Sains, Matematika, serta Kripto & Blockchain ke dalam kurikulum pembelajaran modern.</p>
+
+    <!-- COURSE SECTION -->
+    <section id="courses" class="courses">
+        <div class="course-card">
+            <h3>Sains</h3>
+            <a href="modules/sains/" target="_blank">Lihat modul PDF</a>
         </div>
-    </div>
-    <footer>
-        © 2025 Sciedutech.id — Growth and Create
-    </footer>
+        <div class="course-card">
+            <h3>Matematika</h3>
+            <a href="modules/matematika/" target="_blank">Lihat modul PDF</a>
+        </div>
+        <div class="course-card">
+            <h3>Kripto</h3>
+            <a href="modules/kripto/" target="_blank">Lihat modul PDF</a>
+        </div>
+        <div class="course-card">
+            <h3>Blockchain</h3>
+            <a href="modules/blockchain/" target="_blank">Lihat modul PDF</a>
+        </div>
+    </section>
+
+    <!-- VOUCHER FORM -->
+    <section id="voucher" class="voucher-box">
+        <h2>Formulir Pengajuan Kode Voucher</h2>
+        <p>Isi data berikut untuk mendapatkan kode akses modul.</p>
+
+        <form action="mailto:sciedugame@gmail.com" method="POST" enctype="text/plain">
+            <label>Nama Lengkap</label>
+            <input type="text" name="Nama" required />
+
+            <label>Email</label>
+            <input type="email" name="Email" required />
+
+            <button class="btn" type="submit">Lanjutkan Pemesanan</button>
+        </form>
+    </section>
+
+    <!-- HISTORY SECTION -->
+    <section id="history" class="history">
+        <h2>Riwayat Akses</h2>
+        <p>Mereka yang telah mengakses kursus Sciedutech.id secara gratis. Kamu kapan?</p>
+        <ul>
+            <li>• (Contoh) Aldi Pratama — Sains</li>
+            <li>• (Contoh) Rina Amelia — Kripto</li>
+            <li>• (Contoh) Budi Santoso — Matematika</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    © 2025 Sciedutech.id — Growth and Create
+</footer>
+
 </body>
 </html>
